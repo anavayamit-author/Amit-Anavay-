@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Author Amit Anavay - Official Website">
+<title>Author Amit Anavay | Official Website</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,serif;background:#fffdf9;color:#29251f;line-height:1.8}
+header{padding:20px 6%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #e8dfce;background:#fff;position:sticky;top:0}
+.logo{font-size:19px;font-weight:bold;letter-spacing:2px}
+.logo span{color:#b18a45}
+nav a{margin:0 9px;text-decoration:none;color:#38332b;font-size:14px}
+button,.btn{background:#b18a45;color:white;border:1px solid #b18a45;padding:10px 18px;cursor:pointer;text-decoration:none}
+.hero{padding:90px 8%;background:linear-gradient(120deg,#fffdf9,#f2eadc);text-align:center}
+.hero small,.tag{color:#b18a45;letter-spacing:3px}
+.hero h1{font-size:clamp(42px,8vw,76px);line-height:1.2;margin:20px 0}
+.hero h1 span{color:#b18a45}
+.hero p{font-size:19px;color:#71685a}
+section{padding:75px 8%;scroll-margin-top:90px}
+h2{font-size:34px;font-weight:normal;margin:10px 0 20px}
+.sub{color:#82796d;max-width:750px}
+.center{text-align:center}
+.gold{color:#b18a45}
+.about{background:#f8f5ef}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:30px}
+.card{background:white;border:1px solid #e9dfcf;padding:28px;border-radius:4px}
+.card h3{margin-bottom:12px;font-weight:normal}
+.book{background:#f8f5ef;text-align:center}
+.cover{width:190px;height:260px;margin:25px auto;background:linear-gradient(145deg,#d9c49c,#f9f3e7);display:flex;align-items:center;justify-content:center;text-align:center;color:#745b30;border:5px double #b18a45;padding:15px;font-size:20px}
+.quote{font-size:27px;color:#6c5737;font-style:italic;max-width:800px;margin:25px auto}
+.contact{background:#29251f;color:white;text-align:center}
+.contact p{color:#ddd2bd}
+footer{text-align:center;padding:25px;background:#1e1b17;color:#cbb994;font-size:13px}
+@media(max-width:700px){
+header{flex-wrap:wrap;gap:12px}
+nav{width:100%;display:flex;flex-wrap:wrap;gap:8px}
+nav a{margin:0;font-size:12px}
+.cards{grid-template-columns:1fr}
+section{padding:55px 6%}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">AUTHOR <span>AMIT ANAVAY</span></div>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#books">Books</a>
+<a href="#writing">Writing</a>
+<a href="#journey">Journey</a>
+<a href="#contact">Contact</a>
+<button onclick="changeLanguage()">हिंदी / EN</button>
+</nav>
+</header>
+
+<div class="hero" id="home">
+<small>OFFICIAL AUTHOR WEBSITE</small>
+<h1>AUTHOR<br><span>AMIT ANAVAY</span></h1>
+<p data-hi="लेखक | कवि | साहित्यिक व्यक्तित्व"
+data-en="Author | Poet | Literary Personality">
+लेखक | कवि | साहित्यिक व्यक्तित्व</p>
+<br><br>
+<a href="#about" class="btn" data-hi="मेरा परिचय" data-en="Discover Me">मेरा परिचय</a>
+</div>
+
+<section id="about" class="about">
+<div class="center">
+<div class="tag">ABOUT THE AUTHOR</div>
+<h2 data-hi="मेरा परिचय" data-en="About Me">मेरा परिचय</h2>
+</div>
+<p class="sub" data-hi="मैं अमित अनवय हूँ। साहित्य और लेखन मेरे लिए विचारों, संवेदनाओं और समाज से जुड़े अनुभवों को अभिव्यक्त करने का माध्यम हैं। इस वेबसाइट के माध्यम से आप मेरी साहित्यिक यात्रा, रचनाओं और प्रकाशित पुस्तकों से परिचित हो सकते हैं।"
+data-en="I am Amit Anavay. Literature and writing are my ways of expressing ideas, emotions and experiences connected with society. Through this website, you can explore my literary journey, writings and published books.">
+मैं अमित अनवय हूँ। साहित्य और लेखन मेरे लिए विचारों, संवेदनाओं और समाज से जुड़े अनुभवों को अभिव्यक्त करने का माध्यम हैं। इस वेबसाइट के माध्यम से आप मेरी साहित्यिक यात्रा, रचनाओं और प्रकाशित पुस्तकों से परिचित हो सकते हैं।
+</p>
+</section>
+
+<section id="books" class="book">
+<div class="tag">MY PUBLICATION</div>
+<h2 data-hi="मेरी पुस्तक" data-en="My Book">मेरी पुस्तक</h2>
+<div class="cover">AMIT<br>ANAVAY<br><small>BOOK COVER</small></div>
+<p data-hi="मेरी प्रकाशित पुस्तक। पुस्तक का नाम और विवरण शीघ्र यहाँ उपलब्ध होगा।"
+data-en="My published book. The book title and details will be featured here.">
+मेरी प्रकाशित पुस्तक। पुस्तक का नाम और विवरण शीघ्र यहाँ उपलब्ध होगा।
+</p>
+</section>
+
+<section id="writing">
+<div class="center">
+<div class="tag">MY CREATIVE WORLD</div>
+<h2 data-hi="मेरी लेखनी" data-en="My Writing">मेरी लेखनी</h2>
+</div>
+<div class="cards">
+<div class="card">
+<h3 data-hi="कविताएँ" data-en="Poetry">कविताएँ</h3>
+<p data-hi="मेरी भावनाओं और विचारों की काव्यात्मक अभिव्यक्ति।" data-en="Poetic expressions of my feelings and thoughts.">मेरी भावनाओं और विचारों की काव्यात्मक अभिव्यक्ति।</p>
+</div>
+<div class="card">
+<h3 data-hi="लेख" data-en="Articles">लेख</h3>
+<p data-hi="समाज, साहित्य और जीवन से जुड़े विचार।" data-en="Thoughts on society, literature and life.">समाज, साहित्य और जीवन से जुड़े विचार।</p>
+</div>
+<div class="card">
+<h3 data-hi="विचार" data-en="Reflections">विचार</h3>
+<p data-hi="शब्दों में व्यक्त मेरी सोच और दृष्टिकोण।" data-en="My thoughts and perspectives expressed in words.">शब्दों में व्यक्त मेरी सोच और दृष्टिकोण।</p>
+</div>
+</div>
+</section>
+
+<section id="journey" class="about">
+<div class="center">
+<div class="tag">MY JOURNEY</div>
+<h2 data-hi="साहित्यिक यात्रा" data-en="Literary Journey">साहित्यिक यात्रा</h2>
+</div>
+<p class="sub" data-hi="मेरी लेखन यात्रा, पुस्तक विमोचन, साहित्यिक आयोजन, सम्मान और उपलब्धियों का विस्तृत परिचय यहाँ प्रस्तुत किया जाएगा।"
+data-en="This section will feature my writing journey, book launches, literary events, honours and achievements.">
+मेरी लेखन यात्रा, पुस्तक विमोचन, साहित्यिक आयोजन, सम्मान और उपलब्धियों का विस्तृत परिचय यहाँ प्रस्तुत किया जाएगा।
+</p>
+</section>
+
+<section class="center">
+<div class="tag">MY THOUGHT</div>
+<h2 data-hi="शब्दों की दुनिया" data-en="The World of Words">शब्दों की दुनिया</h2>
+<p class="quote" data-hi="लेखनी की असली पहचान शब्दों की संख्या से नहीं, उनके प्रभाव से बनती है।"
+data-en="A writer is remembered not by the number of words, but by the impact they create.">
+लेखनी की असली पहचान शब्दों की संख्या से नहीं, उनके प्रभाव से बनती है।
+</p>
+</section>
+
+<section id="contact" class="contact">
+<div class="tag">GET IN TOUCH</div>
+<h2 data-hi="आइए, जुड़ें" data-en="Let's Connect">आइए, जुड़ें</h2>
+<p data-hi="साहित्यिक संवाद और संपर्क के लिए मेरे सोशल मीडिया से जुड़ें।"
+data-en="Connect with me for literary conversations and updates.">
+साहित्यिक संवाद और संपर्क के लिए मेरे सोशल मीडिया से जुड़ें।
+</p>
+<br>
+<a class="btn" href="https://www.instagram.com/" target="_blank">Instagram</a>
+</section>
+
+<footer>
+© 2026 AUTHOR AMIT ANAVAY | All Rights Reserved
+</footer>
+
+<script>
+let english=false;
+function changeLanguage(){
+english=!english;
+document.querySelectorAll('[data-hi]').forEach(el=>{
+el.textContent=english?el.dataset.en:el.dataset.hi;
+});
+document.documentElement.lang=english?'en':'hi';
+}
+</script>
+
+</body>
+</html>
